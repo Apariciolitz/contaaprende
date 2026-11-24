@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaAprende | Aprende contabilidad</title>
+  <meta name="description" content="Aprende contabilidad: fundamentos, principios, PCGE interactivo, NIC/NIIF y libros contables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="hero" id="inicio">
+    <div class="hero__fondo"></div>
+
+    <div class="barra contenedor">
+      <a href="#inicio" class="logo">
+        <svg viewBox="0 0 32 32" class="logo__marca" aria-hidden="true"><path d="M16 4 30 28H2z" fill="#8fe3d3"/><path d="M16 15 22.5 28h-13z" fill="#0a1e30"/></svg>
+        <span class="logo__texto">ContaAprende<small>Escuela de contabilidad</small></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="activo">Inicio</a>
+        <a href="#aprende">Aprende</a>
+        <a href="#pcge">PCGE</a>
+        <a href="#libros">Libros contables</a>
+        <a href="#practica">Practica</a>
+        <a href="#descargas">Recursos</a>
+      </nav>
+
+      <a href="#pcge" class="boton boton--menta boton--chico barra__cta">Explorar PCGE <svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+
+    <div class="contenedor hero__grid">
+      <div class="hero__texto">
+        <p class="sobretitulo sobretitulo--claro">Aprende hoy, decide mejor mañana</p>
+        <h1>Entiende la contabilidad. <span>Paso a paso.</span></h1>
+        <p class="hero__bajada">Conoce los <a href="#fundamentos" class="enlace enlace--claro">fundamentos</a>, explora el <a href="#pcge" class="enlace enlace--claro">Plan Contable General Empresarial</a> y descubre qué <a href="#libros" class="enlace enlace--claro">libros contables</a> debe llevar una empresa.</p>
+        <div class="hero__botones">
+          <a href="#aprende" class="boton boton--menta">Empezar a aprender <svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="descargas/pcge-resumen.csv" download class="boton boton--contorno"><svg class="icono" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> Descargar PCGE</a>
+        </div>
+        <ul class="confianza">
+          <li><svg class="icono" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Contenido<br>práctico</span></li>
+          <li><svg class="icono" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Basado en<br>NIIF y PCGE</span></li>
+          <li><svg class="icono" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg><span>Libros<br>contables</span></li>
+        </ul>
+      </div>
+
+      <div class="panel-vidrio">
+        <div class="panel-vidrio__cabeza">
+          <div>
+            <p class="panel-vidrio__etiqueta">Total activo · ejemplo</p>
+            <p class="panel-vidrio__monto">S/ 120,000.00</p>
+            <p class="panel-vidrio__variacion"><svg class="icono" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg> 12.4% <span>vs. año anterior</span></p>
+          </div>
+          <span class="pildora">Año 2026</span>
+        </div>
+        <svg class="grafico" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="relleno" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fe3d3" stop-opacity=".35"/><stop offset="1" stop-color="#8fe3d3" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 95 C30 92 45 70 75 72 S120 88 150 74 S195 45 225 52 S270 70 300 48 S350 20 400 8 L400 120 L0 120Z" fill="url(#relleno)"/>
+          <path d="M0 95 C30 92 45 70 75 72 S120 88 150 74 S195 45 225 52 S270 70 300 48 S350 20 400 8" fill="none" stroke="#8fe3d3" stroke-width="3"/>
+          <circle cx="396" cy="9" r="5" fill="#fff"/>
+        </svg>
+        <div class="meses"><span>Ene</span><span>Feb</span><span>Mar</span><span>Abr</span><span>May</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Oct</span><span>Nov</span><span>Dic</span></div>
+        <div class="panel-vidrio__tiles">
+          <div class="tile"><svg class="icono" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg><small>Activo</small><b>S/ 120,000</b></div>
+          <div class="tile"><svg class="icono" viewBox="0 0 24 24"><path d="M3 21h18M4 10h16M12 3 3 8h18zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg><small>Pasivo</small><b>S/ 54,000</b></div>
+          <div class="tile"><svg class="icono" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><small>Patrimonio</small><b>S/ 66,000</b></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hero__firma">Activo = Pasivo + Patrimonio</p>
+  </header>
+
+  <main>
+
+    <section class="seccion" id="modulos">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="sobretitulo">Lo que aprenderás</p>
+            <h2>Contabilidad para cada etapa de tu aprendizaje.</h2>
+          </div>
+          <p class="cabecera-seccion__texto">Desde los conceptos básicos hasta las normas internacionales, organizados en módulos cortos y fáciles de seguir.</p>
+          <a href="#aprende" class="boton boton--suave boton--chico">Ver todos los temas <svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="modulos">
+          <a href="#fundamentos" class="modulo">
+            <svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>
+            <h3>Fundamentos</h3>
+            <p>Qué es la contabilidad y la partida doble.</p>
+            <span class="modulo__flecha"><svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a href="#principios" class="modulo">
+            <svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M12 3v18M5 21h14M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>
+            <h3>Principios contables</h3>
+            <p>Las reglas que dan confianza a la información.</p>
+            <span class="modulo__flecha"><svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a href="#estados" class="modulo">
+            <svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            <h3>Activo, pasivo y patrimonio</h3>
+            <p>Lo que la empresa tiene, debe y le pertenece.</p>
+            <span class="modulo__flecha"><svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a href="#ingresos-gastos" class="modulo">
+            <svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+            <h3>Ingresos y gastos</h3>
+            <p>Cómo se forma la utilidad de la empresa.</p>
+            <span class="modulo__flecha"><svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a href="#niif" class="modulo">
+            <svg class="icono icono--grande" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            <h3>NIC y NIIF</h3>
+            <p>Las normas internacionales más usadas.</p>
+            <span class="modulo__flecha"><svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--tenue" id="aprende">
+      <div class="contenedor contenedor--angosto">
+        <p class="sobretitulo">Módulo 1</p>
+        <h2>Aprende contabilidad</h2>
+        <p class="intro">Haz clic en cada tema para desplegar su contenido.</p>
+
+        <div class="acordeon">
+          <details class="tema" id="fundamentos" open>
+            <summary>Fundamentos de contabilidad</summary>
+            <div class="tema__cuerpo">
+              <p>La <b>contabilidad</b> es la disciplina que registra, clasifica y resume las operaciones económicas de una empresa para producir información útil en la toma de decisiones: los <a href="#estados" class="enlace">estados financieros</a>.</p>
+              <div class="tarjetas-3">
+                <div class="mini"><h4>Registrar</h4><p>Anotar cada operación (compras, ventas, pagos) en el <a href="#libros" class="enlace">Libro Diario</a>.</p></div>
+                <div class="mini"><h4>Clasificar</h4><p>Agrupar las operaciones en cuentas según el <a href="#pcge" class="enlace">PCGE</a>.</p></div>
+                <div class="mini"><h4>Resumir</h4><p>Presentar los resultados en el Estado de Situación Financiera y el Estado de Resultados.</p></div>
+              </div>
+              <h4>La partida doble</h4>
+              <p>Toda operación afecta al menos dos cuentas: lo que se registra en el <b>Debe</b> (izquierda) siempre es igual a lo que se registra en el <b>Haber</b> (derecha). No hay deudor sin acreedor.</p>
+            </div>
+          </details>
+
+          <details class="tema" id="principios">
+            <summary>Principios contables</summary>
+            <div class="tema__cuerpo">
+              <p>Son reglas básicas que garantizan que la información sea comparable y confiable. Hoy están recogidas en el <b>Marco Conceptual</b> de las <a href="#niif" class="enlace">NIIF</a>.</p>
+              <ul class="lista-2">
+                <li><b>Entidad:</b> la empresa es distinta de sus dueños.</li>
+                <li><b>Empresa en marcha:</b> se asume que la empresa seguirá operando en el futuro.</li>
+                <li><b>Devengado:</b> ingresos y gastos se registran cuando ocurren, no cuando se cobran o pagan.</li>
+                <li><b>Periodo contable:</b> la información se presenta por periodos (normalmente un año).</li>
+                <li><b>Prudencia:</b> no sobrevalorar activos ni ingresos, ni subvalorar pasivos ni gastos.</li>
+                <li><b>Uniformidad:</b> aplicar los mismos criterios de un periodo a otro.</li>
+                <li><b>Materialidad:</b> lo relevante se informa con detalle; lo insignificante puede simplificarse.</li>
+                <li><b>Moneda común:</b> todo se expresa en una misma unidad monetaria (en Perú, soles).</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="tema" id="estados">
+            <summary>Activos, pasivos y patrimonio</summary>
+            <div class="tema__cuerpo">
+              <div class="tarjetas-3">
+                <div class="mini mini--activo"><h4>Activo</h4><p>Recursos que controla la empresa y que le darán beneficios.</p><small>Caja, cuentas por cobrar, mercaderías, maquinaria.</small></div>
+                <div class="mini mini--pasivo"><h4>Pasivo</h4><p>Obligaciones presentes con terceros.</p><small>Deudas con proveedores, préstamos, tributos por pagar.</small></div>
+                <div class="mini mini--patrimonio"><h4>Patrimonio</h4><p>Parte que pertenece a los dueños: Activo − Pasivo.</p><small>Capital, reservas, resultados acumulados.</small></div>
+              </div>
+              <p>Pruébalo en la <a href="#calculadora" class="enlace">calculadora de la ecuación contable</a>.</p>
+            </div>
+          </details>
+
+          <details class="tema" id="ingresos-gastos">
+            <summary>Ingresos y gastos</summary>
+            <div class="tema__cuerpo">
+              <p><b>Ingresos:</b> aumentos de beneficios económicos (ventas, servicios prestados, intereses ganados). Aumentan el patrimonio. En el PCGE están en el <a href="#pcge" class="enlace" data-elemento="7">elemento 7</a>.</p>
+              <p><b>Gastos:</b> disminuciones de beneficios económicos (sueldos, alquileres, servicios, depreciación). Disminuyen el patrimonio. En el PCGE están en el <a href="#pcge" class="enlace" data-elemento="6">elemento 6</a>.</p>
+              <div class="formula">Utilidad (o pérdida) = Ingresos − Gastos</div>
+            </div>
+          </details>
+
+          <details class="tema" id="niif">
+            <summary>NIC y NIIF</summary>
+            <div class="tema__cuerpo">
+              <p>Las <b>NIC</b> (Normas Internacionales de Contabilidad) y las <b>NIIF</b> (Normas Internacionales de Información Financiera) son emitidas por el IASB. En Perú, el <a href="https://www.mef.gob.pe/es/consejo-normativo-de-contabilidad" target="_blank" rel="noopener" class="enlace">Consejo Normativo de Contabilidad</a> las oficializa. Las normas completas están en <a href="https://www.ifrs.org" target="_blank" rel="noopener" class="enlace">ifrs.org</a>.</p>
+              <div class="tabla-envoltura">
+                <table class="tabla">
+                  <thead><tr><th>Norma</th><th>Tema</th><th>¿Qué regula?</th></tr></thead>
+                  <tbody>
+                    <tr><td>NIC 1</td><td>Presentación de estados financieros</td><td>Estructura y contenido mínimo de los EE.FF. (será reemplazada por la NIIF 18 desde 2027).</td></tr>
+                    <tr><td>NIC 2</td><td>Inventarios</td><td>Cómo medir y registrar las existencias.</td></tr>
+                    <tr><td>NIC 7</td><td>Estado de flujos de efectivo</td><td>Entradas y salidas de efectivo por actividades.</td></tr>
+                    <tr><td>NIC 12</td><td>Impuesto a las ganancias</td><td>Impuesto a la renta corriente y diferido.</td></tr>
+                    <tr><td>NIC 16</td><td>Propiedades, planta y equipo</td><td>Reconocimiento y depreciación de activos fijos.</td></tr>
+                    <tr><td>NIIF 9</td><td>Instrumentos financieros</td><td>Clasificación y deterioro de activos financieros.</td></tr>
+                    <tr><td>NIIF 15</td><td>Ingresos de contratos con clientes</td><td>Cuándo y cuánto ingreso reconocer (modelo de 5 pasos).</td></tr>
+                    <tr><td>NIIF 16</td><td>Arrendamientos</td><td>Registro de alquileres como activo por derecho de uso.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="pcge">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="sobretitulo">Módulo 2</p>
+            <h2>PCGE interactivo</h2>
+          </div>
+          <p class="cabecera-seccion__texto">Filtra por elemento, busca por código o nombre y haz clic en una cuenta para ver su dinámica. Fuente oficial: <a href="https://www.mef.gob.pe/es/consejo-normativo-de-contabilidad" target="_blank" rel="noopener" class="enlace">MEF</a>.</p>
+        </div>
+
+        <div class="pcge-controles">
+          <label class="buscador">
+            <svg class="icono" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="buscador" placeholder="Buscar: 42, ventas, caja..." aria-label="Buscar cuenta">
+          </label>
+          <button class="boton boton--suave boton--chico" id="btnDescargarFiltro"><svg class="icono" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> Descargar lo filtrado</button>
+        </div>
+        <div class="chips" id="chipsElementos"></div>
+
+        <div class="pcge-layout">
+          <div class="cuentas" id="listaCuentas"></div>
+          <aside class="detalle" id="detalleCuenta">
+            <p class="detalle__vacio">Selecciona una cuenta para ver su clasificación, código y dinámica.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--banner">
+      <div class="contenedor banner-grid">
+        <div class="banner">
+          <div class="banner__texto">
+            <p class="sobretitulo sobretitulo--claro">Más que teoría</p>
+            <h2>Los libros contables, explicados.</h2>
+            <p>Conoce qué registra cada libro y cuáles debe llevar una empresa según su régimen tributario e ingresos.</p>
+            <a href="#libros" class="boton boton--menta">Ver libros contables <svg class="icono" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="consejo">
+          <svg class="consejo__comillas" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5H3v8h4c0 4-2 5-4 5zM14 21c3 0 7-1 7-8V5h-7v8h4c0 4-2 5-4 5z"/></svg>
+          <p class="consejo__texto" id="consejoTexto"></p>
+          <p class="consejo__autor" id="consejoAutor"></p>
+          <div class="consejo__controles">
+            <button class="circulo" id="consejoAnterior" aria-label="Anterior"><svg class="icono" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="puntos" id="consejoPuntos"></div>
+            <button class="circulo" id="consejoSiguiente" aria-label="Siguiente"><svg class="icono" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="libros">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="sobretitulo">Módulo 3</p>
+            <h2>Libros contables</h2>
+          </div>
+          <p class="cabecera-seccion__texto">Los libros contables son los registros donde se anotan las operaciones de la empresa. Más información en <a href="https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/libros-registros-contables-obligatorios" target="_blank" rel="noopener" class="enlace">SUNAT Emprender</a>.</p>
+        </div>
+
+        <div class="libros-grid" id="librosGrid"></div>
+
+        <div class="libros-dos">
+          <div class="caja" id="obligatorios">
+            <h3>¿Qué libros debo llevar?</h3>
+            <div class="form-fila">
+              <label>Régimen tributario
+                <select id="selRegimen">
+                  <option value="nrus">Nuevo RUS</option>
+                  <option value="rer">Régimen Especial (RER)</option>
+                  <option value="rmt" selected>Régimen MYPE Tributario</option>
+                  <option value="rg">Régimen General</option>
+                </select>
+              </label>
+              <label>Ingresos brutos anuales (S/)
+                <input type="number" id="inpIngresos" min="0" step="1000" value="500000">
+              </label>
+            </div>
+            <div class="resultado" id="resultadoLibros"></div>
+            <p class="nota">Cálculo referencial con UIT 2026 = S/ 5,500. Verifica siempre la normativa vigente en SUNAT.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Ejemplo: asiento en el Libro Diario</h3>
+            <p>Venta de mercaderías al crédito por S/ 1,000 + IGV (18%):</p>
+            <div class="tabla-envoltura">
+              <table class="tabla tabla--diario">
+                <thead><tr><th>Cuenta</th><th>Denominación</th><th>Debe</th><th>Haber</th></tr></thead>
+                <tbody>
+                  <tr><td><a href="#pcge" class="enlace" data-cuenta="12">12</a></td><td>Cuentas por cobrar comerciales – terceros</td><td>1,180.00</td><td></td></tr>
+                  <tr><td><a href="#pcge" class="enlace" data-cuenta="40">40</a></td><td class="sangria">Tributos por pagar (IGV)</td><td></td><td>180.00</td></tr>
+                  <tr><td><a href="#pcge" class="enlace" data-cuenta="70">70</a></td><td class="sangria">Ventas</td><td></td><td>1,000.00</td></tr>
+                  <tr class="glosa"><td colspan="4">Por la venta de mercaderías según factura F001-0001.</td></tr>
+                  <tr class="total"><td colspan="2">Totales</td><td>1,180.00</td><td>1,180.00</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Practica con la <a href="descargas/plantilla-libro-diario.csv" download class="enlace">plantilla del Libro Diario</a> en Excel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--tenue" id="practica">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="sobretitulo">Módulo 4</p>
+            <h2>Practica</h2>
+          </div>
+          <p class="cabecera-seccion__texto">Pon a prueba lo aprendido con estas dos herramientas.</p>
+        </div>
+
+        <div class="practica-grid">
+          <div class="caja" id="calculadora">
+            <h3>Calculadora de la ecuación contable</h3>
+            <p>Escribe dos valores y se calcula el tercero.</p>
+            <label>Activo (S/) <input type="number" id="calcActivo" placeholder="Ej. 120000"></label>
+            <label>Pasivo (S/) <input type="number" id="calcPasivo" placeholder="Ej. 54000"></label>
+            <label>Patrimonio (S/) <input type="number" id="calcPatrimonio" placeholder="Ej. 66000"></label>
+            <div class="resultado" id="calcResultado">Completa dos campos.</div>
+          </div>
+
+          <div class="caja" id="quiz">
+            <h3>¿Debe o Haber?</h3>
+            <p>¿Por qué lado <b>aumenta</b> esta cuenta?</p>
+            <div class="quiz-cuenta" id="quizCuenta">—</div>
+            <div class="quiz-botones">
+              <button class="boton boton--oscuro" data-respuesta="deudora">Debe</button>
+              <button class="boton boton--suave" data-respuesta="acreedora">Haber</button>
+            </div>
+            <div class="resultado" id="quizResultado"></div>
+            <p class="nota">Puntaje: <b id="quizPuntaje">0 / 0</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cifras">
+      <div class="contenedor cifras__fila">
+        <div class="cifra"><svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg><div><b>10</b><span>Elementos del PCGE</span></div></div>
+        <div class="cifra"><svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><div><b id="totalCuentas">90+</b><span>Cuentas explicadas</span></div></div>
+        <div class="cifra"><svg class="icono icono--grande" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg><div><b>9</b><span>Libros contables</span></div></div>
+        <div class="cifra"><svg class="icono icono--grande" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><div><b>8</b><span>Normas NIC / NIIF</span></div></div>
+      </div>
+    </section>
+
+    <section class="seccion" id="descargas">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="sobretitulo">Recursos</p>
+            <h2>Descargas y enlaces útiles</h2>
+          </div>
+        </div>
+        <div class="recursos">
+          <a class="recurso" href="descargas/pcge-resumen.csv" download>
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M12 13v4"/></svg></span>
+            <span><b>Resumen del PCGE</b><small>Archivo CSV para Excel</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          </a>
+          <a class="recurso" href="descargas/plantilla-libro-diario.csv" download>
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span>
+            <span><b>Plantilla Libro Diario</b><small>Archivo CSV para Excel</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          </a>
+          <a class="recurso" href="descargas/glosario-contable.txt" download>
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+            <span><b>Glosario contable</b><small>Archivo de texto</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          </a>
+          <a class="recurso" href="https://www.sunat.gob.pe" target="_blank" rel="noopener">
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><path d="M3 21h18M4 10h16M12 3 3 8h18zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg></span>
+            <span><b>SUNAT</b><small>Sitio oficial</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+          <a class="recurso" href="https://www.mef.gob.pe/es/consejo-normativo-de-contabilidad" target="_blank" rel="noopener">
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span><b>Consejo Normativo de Contabilidad</b><small>PCGE y NIIF oficializadas</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+          <a class="recurso" href="https://www.ifrs.org" target="_blank" rel="noopener">
+            <span class="recurso__icono"><svg class="icono" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+            <span><b>IFRS Foundation</b><small>Normas NIC / NIIF</small></span>
+            <svg class="icono recurso__accion" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 10 14M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <a href="#inicio" class="logo logo--oscuro">
+        <svg viewBox="0 0 32 32" class="logo__marca" aria-hidden="true"><path d="M16 4 30 28H2z" fill="#0a1e30"/><path d="M16 15 22.5 28h-13z" fill="#8fe3d3"/></svg>
+        <span class="logo__texto">ContaAprende<small>Escuela de contabilidad</small></span>
+      </a>
+      <nav class="pie__nav">
+        <a href="#aprende">Aprende</a>
+        <a href="#pcge">PCGE</a>
+        <a href="#libros">Libros</a>
+        <a href="#practica">Practica</a>
+        <a href="#descargas">Recursos</a>
+      </nav>
+      <p class="pie__lema">Aprender hoy.<br>Decidir mejor mañana.</p>
+    </div>
+    <div class="contenedor pie__legal">
+      <p>© 2026 ContaAprende. Proyecto educativo. Contenido referencial; consulta siempre la normativa vigente.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

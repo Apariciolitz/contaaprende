@@ -1,0 +1,23 @@
+GLOSARIO CONTABLE BÁSICO — ContaAprende
+=======================================
+
+Activo: recursos controlados por la empresa que generarán beneficios futuros.
+Pasivo: obligaciones presentes de la empresa con terceros.
+Patrimonio: parte residual de los activos tras deducir los pasivos (Activo − Pasivo).
+Ingreso: aumento de beneficios económicos que incrementa el patrimonio.
+Gasto: disminución de beneficios económicos que reduce el patrimonio.
+Debe: lado izquierdo de una cuenta. Cargar = anotar en el Debe.
+Haber: lado derecho de una cuenta. Abonar = anotar en el Haber.
+Partida doble: toda operación afecta al menos dos cuentas; Debe = Haber.
+Asiento contable: registro de una operación en el Libro Diario.
+Saldo: diferencia entre el Debe y el Haber de una cuenta.
+Cuenta T: representación gráfica de una cuenta con Debe y Haber.
+Devengado: registrar ingresos y gastos cuando ocurren, no cuando se cobran o pagan.
+Depreciación: distribución del costo de un activo fijo durante su vida útil.
+PCGE: Plan Contable General Empresarial; ordena las cuentas en 10 elementos.
+NIC / NIIF: Normas Internacionales de Contabilidad / de Información Financiera.
+IGV: Impuesto General a las Ventas (18% en Perú, incluye el IPM).
+UIT: Unidad Impositiva Tributaria (S/ 5,500 en 2026).
+Estados financieros: informes que resumen la situación y resultados de la empresa.
+Libro Diario: registro cronológico de todas las operaciones.
+Libro Mayor: agrupa los movimientos por cuenta.
